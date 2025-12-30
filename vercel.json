@@ -1,4 +1,4 @@
 {
-  "buildCommand": "bun run build",
-  "installCommand": "npx bun@1.2.23 install"
+  "installCommand": "bun install",
+  "buildCommand": "bunx tsx scripts/prebuild.mts && NODE_OPTIONS=--max-old-space-size=6144 bunx next build --webpack"
 }
